@@ -22,7 +22,7 @@ const Register = () => {
   const handleRegister = async(e)=>{
     e.preventDefault();
     try{
-      const response =await axios.post ("http://localhost:5000/api/v1/user/patient/register",{firstName,lastName,email,phone,nic,dob,gender,password,role:"Patient"},
+      const response =await axios.post ("https://hospmang-backend.onrender.com/api/v1/user/patient/register",{firstName,lastName,email,phone,nic,dob,gender,password,role:"Patient"},
     {withCredentials:true,
     headers:{"Content-Type":"application/json"},
   });

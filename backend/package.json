@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "start":"node server.js",
-    "dev":"nodemon serevr.js"
+    "build": "npm install",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +22,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.0",
     "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
   }
 }

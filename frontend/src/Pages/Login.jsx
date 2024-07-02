@@ -17,7 +17,7 @@ const Login = () => {
   const handleLogin = async (e)=>{
     e.preventDefault();
     try{
-      const response =await axios.post ("http://localhost:5000/api/v1/user/patient/login",{email,password,confirmPassword,role:"Patient"},
+      const response =await axios.post (`https://hospmang-backend.onrender.com/api/v1/user/patient/login`,{email,password,confirmPassword,role:"Patient"},
     {withCredentials:true,
     headers:{"Content-TYpe":"application/json"},
   });

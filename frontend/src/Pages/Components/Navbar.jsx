@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     await axios
-      .get("http://localhost:5000/api/v1/user/patient/logout/me", {
+      .get("https://hospmang-backend.onrender.com/api/v1/user/patient/logout/me", {
         withCredentials: true,
       })
       .then((res) => {
