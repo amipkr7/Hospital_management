@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import 
 
 const AppointmentForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -17,6 +18,7 @@ const AppointmentForm = () => {
   const [doctorLastName, setDoctorLastName] = useState("");
   const [address, setAddress] = useState("");
   const [hasVisited, setHasVisited] = useState(false);
+  import { useNavigate } from 'react-router-dom';
 
   const departmentsArray = [
     "Pediatrics",
@@ -86,6 +88,12 @@ const AppointmentForm = () => {
       toast.error(error.response.data.message);
     }
   };
+
+  let navigate=useNavigate();
+
+  let payment =()=>{
+   navigate('/payment')
+  }
 
   return (
     <>
@@ -209,7 +217,7 @@ const AppointmentForm = () => {
               style={{ flex: "none", width: "25px" }}
             />
           </div>
-          <button style={{ margin: "0 auto" }}>GET APPOINTMENT</button>
+          <button onClick={} style={{ margin: "0 auto" }}>GET APPOINTMENT</button>
         </form>
       </div>
     </>
