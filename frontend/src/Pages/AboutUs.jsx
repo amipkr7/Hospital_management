@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <>
      
-     <Hero title={"Learn More About Us | Zeecare Medical Institute"} image_url={about} /> 
+     <Hero title={"Learn More About Us | ClinicSphere"} image_url={about} /> 
      <Biography image_url={whoweare}/>
     </>
   )

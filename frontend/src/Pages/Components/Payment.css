@@ -1,0 +1,60 @@
+/* General styling for the payment container */
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+  }
+  
+  /* Styling for the card */
+  .card1 {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Heading styling */
+  .card1 h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Paragraph styling */
+  .card1 p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  /* Button styling */
+  .pay-button {
+    background: #3399cc;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .pay-button:hover {
+    background: #287aa9;
+    transform: translateY(-2px);
+  }
+  
+  /* Button focus state */
+  .pay-button:focus {
+    outline: none;
+  }
+  

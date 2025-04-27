@@ -6,7 +6,7 @@ const Appointment = () => {
   return (
     <div>
       <br /><br /><br />
-      <Hero title={"Schedule Your Appointment | United Group of Medical Sciences"} image_url={signin}/>
+      <Hero title={"Schedule Your Appointment | ClinicSphere"} image_url={signin}/>
       <AppointmentForm/>
     </div>
   )

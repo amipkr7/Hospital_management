@@ -15,7 +15,10 @@ import { useEffect } from 'react';
 import { useContext } from 'react';
 import AIBot from './Pages/Components/AIbot.jsx';
 import axios from 'axios';
-import Payment from '../../dashboard/src/Components/Payment.jsx';
+import AppointmentUser from './Pages/Components/AppointmentUser.jsx';
+
+// import Payment from '../../dashboard/src/Components/Payment.jsx';
+import Payment from './Pages/Components/Payment.jsx';
 
 const App = () => {
   const {isAuthenticated,setIsAuthenticated,setUser}=useContext(Context);
@@ -47,7 +50,8 @@ const App = () => {
           <Route path='/appointment' element={<Appointment/>}></Route>
           <Route path='/about' element={<AboutUs/>}></Route>
           <Route path='/chat' element={<AIBot/>}></Route>
-          <Route path='/payment' element={<AIBot/>}></Route>
+          <Route path='/payment' element={<Payment/>}></Route>
+          <Route path="/appointmentUser" element={<AppointmentUser/>}></Route>
         </Routes>
         <ToastContainer position="top-center"/>
      
